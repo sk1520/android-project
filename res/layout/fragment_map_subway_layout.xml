@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sk.mtafare.mtastatus.SubwayFragment">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/optionsDrawerlayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subwayTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Subway System Map"
+                android:textColor="#1c1c1c"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                android:id="@+id/subwayMapPhotoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Subway Map " />
+
+            <TextView
+                android:id="@+id/downloadSubwayMapTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="text"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/individualLinesTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="View Where Trains Stop:"
+                android:textColor="#1c1c1c"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/individualLineTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="web"
+                tools:text="text"
+                android:textColor="#383838"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/main_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:theme="@style/Custom_NavigationViewDrawerStyle"
+            app:menu="@menu/main_navigation" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>

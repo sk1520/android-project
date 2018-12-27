@@ -1,0 +1,15 @@
+<resources>
+    <!-- Generic Text Sizes -->
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_medium">14sp</dimen>
+    <dimen name="textSize_large">16sp</dimen>
+    <dimen name="textSize_X_large">18sp</dimen>
+    <dimen name="textSize_XX_large">20sp</dimen>
+    <dimen name="textSize_XXX_large">24sp</dimen>
+
+    <!-- Table Heading Text Size-->
+    <dimen name="table_heading_textSize">6sp</dimen>
+    <dimen name="table_row_textSize">6sp</dimen>
+
+    <!-- Margins -->
+</resources>

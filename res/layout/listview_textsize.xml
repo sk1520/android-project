@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--CUSTOM TEXT AND STYLE FOR LISTVIEW FOR USEFULMTALINKS-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_listview_text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:autoLink="web"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/_9sdp"
+    android:paddingTop="@dimen/_9sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:textColor="#1c1c1c"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold|italic" />

@@ -1,0 +1,614 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sk.mtafare.mtastatus.SubwayFragment">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/optionsDrawerlayout"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="@dimen/_320sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statusUpdateTimeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/service_status_loading"
+                        android:textSize="@dimen/_20ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_1_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_1" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_2_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_2" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_3_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_3" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_3"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_1_2_3_TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            tools:text="SERVICE STATUS 1 2 3" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_4_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_4" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_5_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_5" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_6_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_6" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_6"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_4_5_6_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS 4 5 6" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_7_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_7" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_7"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_7"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_7"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_7_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS 7" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_A_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_a" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_C_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_c" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_E_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_e" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_e"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_A_C_E_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS A C E" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_B_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_b" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_D_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_d" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_F_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_f" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_M_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_m" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_B_D_F_M_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS B D F M" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_G_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_g" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_g"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_g"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_g"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_G_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS G" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_J_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_j" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_Z_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_z" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_z"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_z"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_J_Z_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS J Z" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_L_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_l" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_l"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_l"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_l"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_L_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS L" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_N_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_n" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_Q_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_q" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_R_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_r" />
+
+                    <ImageView
+                        android:id="@+id/status_subway_W_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:src="@drawable/ic_train_w" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_N_Q_R_W_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS N Q R W" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_S_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_s" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_s"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_s"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_s"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_S_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS S" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="0">
+
+                    <ImageView
+                        android:id="@+id/status_subway_SIR_ImageView"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:src="@drawable/ic_train_sir" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_sir"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_sir"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_train_sir"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="">
+
+                        <TextView
+                            android:id="@+id/status_subway_SIR_TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"
+                            tools:text="SERVICE STATUS SIR" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/main_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:theme="@style/Custom_NavigationViewDrawerStyle"
+            app:menu="@menu/main_navigation" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</FrameLayout>
